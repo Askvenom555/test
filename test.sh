@@ -3,13 +3,6 @@
 if [[ $EUID -ne 0 ]]; then
    echo "Run as root"
    exit 1
-fi
-
-WIFI_IF="wlan0"
-ETH_IF="eth0"
-FAKE_SSID="FreeWiFi"
-FAKE_NET="192.168.10.0/24"
-GATEWAY_IP="192.168.10.1"
 
 echo "[*] Setting up fake AP..."
 
